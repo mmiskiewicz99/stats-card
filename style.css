@@ -1,0 +1,131 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+body{
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+/*container*/
+.container{
+    margin: 3rem auto;
+    margin-bottom: 3rem;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 1rem;
+}
+/*image*/
+.main-img{
+    background-color: hsl(277, 61%, 27%);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 30%;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    opacity: 0.5;
+}
+/*text*/
+.container-text{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+    
+}
+.container h1{
+    font-weight: 700;
+    font-size: 25px;
+}
+.container span{
+    color: hsl(277, 64%, 61%);
+}
+.container p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    
+}
+/*details*/
+
+.details h2{
+    font-size: 20px;
+    margin-bottom: 0;
+    
+}
+.details p{
+    text-transform:uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    margin-top: 0.2rem;
+}
+
+/*responsivity settings*/
+@media only screen and (min-width: 800px) {
+    .container{
+        display:flex;
+        flex-direction: row;
+        width: 800px;
+        height: 60vh;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        transition: all ease-in 0.2s;
+    }
+    .container-text{
+        margin-top: 2.5rem;
+        margin: 2.5rem;
+        text-align: left;
+        width: 40%;
+    }
+    .container-text p{
+        margin-top: 2rem;
+    }
+
+    .main-img{
+        order:2;
+        height: 100%;
+        width:50%;
+        
+    }
+    .container img{
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .metrics{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+    }
+
+    .details h2{
+        margin-bottom: 0.7rem;
+    }
+    .details p{
+        margin-top: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .container{
+        width: 1000px;
+        transition: all ease-in 0.2s;
+    }
+    .container-text{
+        width: 40%;
+    }
+}
